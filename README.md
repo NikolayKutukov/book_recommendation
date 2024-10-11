@@ -17,7 +17,12 @@
 └── requirements.txt           # Python dependencies for the project
 ```
 # Application Schema
-![Local Image](images/image.jpg)
+![Local Image](images/app_schema.png)
+# Example
+### Main Page:
+ ![Local Image](images/main_page.png)
+ ### Recommendations Page:
+ ![Local Image](images/result_page.png)
 ## Installation
 Create a virtual environment and install the dependencies.
 ```sh
@@ -48,9 +53,10 @@ Dataset also contains:
 - Read the data, select relevant columns
 - Remove observations with invalid ISBN in both datasets
 - **Books.csv:**
--- Normalize string columns (Lowercase, no punctuation, no diacritics)
--- Fill the missing values for Author column with default value
+- - Normalize string columns (Lowercase, no punctuation, no diacritics)
+- - Fill the missing values for Author column with default value
 - **Ratings.csv:**
--- Remove implicit ratings (A ratings of 0)
--- Remove observations containing any missing values
+- - Remove implicit ratings (A ratings of 0)
+- - Remove observations containing any missing values
 - Save cleaned datasets
+## 
